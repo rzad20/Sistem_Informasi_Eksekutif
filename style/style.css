@@ -1,0 +1,510 @@
+:root {
+    --sidebar-color : #82AAE3;
+    --sidebar-hover : #3CC4F3;
+    --navbar-color : #91D8E4;
+    --blue-color : #0000FF;
+    --pear-color : #74b72e;
+    --indigo-color : #3f00ff;
+    --emerald-color : #028a0f;
+
+    --background-color : #EAFDFC;
+    --text-color1 : #fff;
+    --text-color2: #000;
+    --text-color3: #683E00;
+}
+
+*::before, *, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-width: 100vw;
+}
+
+header {
+    min-width: 100vw;
+}
+
+.displaynone {
+    display : none;
+}
+#sidebar-hidden {
+    width:80px;
+    position: fixed;
+    top: 0;
+    height: auto;
+    min-height: 110vh;
+    background-color: var(--sidebar-color);
+    z-index: 999;
+}
+#sidebar, #sidebar-hidden {
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar-menu {
+    width:280px;
+    position: fixed;
+    top: 0;
+    height: auto;
+    min-height: 110vh;
+    background-color: var(--sidebar-color);
+    z-index: 999;
+}
+
+.logo-image {
+    width: 50%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--text-color2);
+
+}
+
+.logo-image img {
+    width: 100%;
+}
+
+.sidebar-menu-list {
+    color : var(--text-color1);
+    font-size: 13px;
+    gap: 0rem 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-menu-list:hover {
+    color: #F2ECFF;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-div {
+    font-size: 16px;
+    gap: 0rem 0.5rem;
+}
+
+.user-profile.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--text-color3);
+    display: flex;
+    gap: 0rem 0.5rem;
+    align-items : center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+main article {
+    margin-left: 300px;
+    padding: 20px 15px;
+    clear: both;
+}
+
+.stats , .details {
+    border : 1px solid var(--sidebar-color);
+    color : #fff;
+    padding: 10px 20px;
+    margin: 10px 10px 0 10px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    border-radius: 15px 15px 0 0;
+}
+
+.details {
+    border-radius: 0 0 15px 15px;
+    background-color: var(--background-color);
+    margin: 0px 10px 0 10px;
+}
+
+.stats.var1 {
+    background-color: var(--indigo-color);
+}
+
+.stats.var2 {
+    background-color: var(--pear-color);
+}
+
+.stats.var3 {
+    background-color: var(--emerald-color);
+}
+
+.stats.var4 {
+    background-color: var(--blue-color);
+}
+
+/* Form */
+.invoice-form-control ,.custom-form-control, .address-custom-form-control, .drilldown-form-control {
+    background-color: var(--background-color);
+    border: none;
+    padding: 0px 10px;
+    color: var(--indigo-color);
+    font-weight: 600;
+    border-radius: 10px;
+    border: .3px var(--emerald-color) solid;
+}
+
+.custom-form-control {
+    height: 80px;
+    width: 600px;
+}
+
+.drilldown-form-control {
+    width: 250px;
+    height: 50px;
+}
+
+.invoice-form-control {
+    width: 100%;
+}
+
+.address-custom-form-control {
+    height: 80px;
+    width: 600px;
+}
+
+.custom-button {
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--indigo-color);
+    color: var(--text-color1);
+    font-weight: 500;
+}
+
+.custom-button:hover{
+    background-color: var(--navbar-color);
+    color: var(--text-color2);
+    transition: 0.2s ease-in-out;
+}
+
+label {
+    width: 100px;
+}
+
+#product-add, #product-delete {
+    padding: 5px 9px;
+    border : 0.5px solid var(--emerald-color);
+    border-radius: 5px;
+    color : var(--text-color1);
+    
+}
+
+#product-add {
+    background-color: var(--indigo-color);
+}
+
+#product-delete {
+    background-color: var(--emerald-color);
+}
+
+#product-add:hover , #product-delete:hover {
+    color : var(--indigo-color);
+    background-color: var(--text-color1);
+    transition: 0.2s ease-in-out;
+}
+
+#add-product-table th {
+    border : 0.2px solid var(--emerald-color);
+    padding: 8px 12px;
+}
+
+.logo-rp {
+    color : var(--indigo-color);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.icon_on_list {
+    border-radius: 15px;
+    color: var(--text-color1);
+}
+
+/* Preview Image */
+.form {
+    margin : 80px 0px 20px;
+    padding : 0px 50px;
+}
+
+.form h2 {
+    text-align : center;
+    color : #acacac;
+    font-size : 20px;
+    font-weight : 400;
+}
+
+.form .grid {
+    margin-top : 50px;
+    display : flex;
+    justify-content: space-around;
+}
+
+.form .grid .form-element {
+    width : 350px;
+    height : 250px;
+    box-shadow : 0px 0px 20px 5px rgba(100,100,100,0.1);
+}
+
+.form .grid .form-element input {
+    display : none;
+}
+
+.form .grid .form-element img {
+    width : 350px;
+    height : 250px;
+
+}
+
+.form .grid .form-element div {
+    position : relative;
+    height : 40px;
+    margin-top : 5px;
+    background : rgba(0,0,0,0.5);
+    text-align : center;
+    line-height : 40px;
+    font-size : 16px;
+    color : #f5f5f5;
+    font-weight : 600;
+}
+
+.form .grid .form-element span {
+    font-size : 30px;
+}
+
+input[type='checkbox'] {
+    height : 20px;
+    width : 20px;
+    background-color : #d5d5d5;
+    border-radius : 5px;
+    cursor : pointer;
+}
+
+.wrapper-checkbox {
+    position : relative;
+}
+
+.wrapper-checkbox label {
+    color : black;
+    font-size : 16px;
+    margin-bottom : 10px;
+}
+
+#toggle_sidebar, #on_sidebar {
+    position : absolute;
+    color : var(--text-color1);
+    right : 0;
+    margin: 2px 20px;
+    font-size: 20px;
+    
+}
+
+#toggle_sidebar_mobile {
+    position : absolute;
+    color : var(--text-color1);
+    left : 0;
+    margin: 2px 20px;
+    font-size: 20px;
+}
+
+#on_sidebar {
+    top: -10;
+}
+
+/* Chart Wrapper */
+.chart_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.dataTables_filter{
+    width: 200px;
+    float: none;
+}
+
+.dataTables_filter input {
+    width: 100%;
+    height: 32px;
+}
+
+.dataTables_scroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dataTables_wrapper {
+    margin-bottom: 20px;
+}
+
+.dataTables_filter {
+    text-align: right;
+}
+
+.dataTables_length {
+    margin-bottom: 10px;
+}
+
+.dataTables_info {
+    margin-top: 10px;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100% !important;
+}
+#customer-table thead th {
+    text-align: left;
+}
+
+table.dataTable thead th {
+    white-space: nowrap;
+}
+#mobile-table {
+    display: none;
+}
+#mobile-table_wrapper {
+    display: none;
+}
+
+/*input */
+input[id="nama_barang"] {
+    width: 300px;
+}
+input[id="nama_pelanggan"] {
+    width: 400px;
+}
+textarea[id="alamat_pelanggan"] {
+    width:400px ; 
+    height:120px;
+}
+input[id="harga_produk"] {
+    width: 120px;
+}
+input[id="diskon_barang"] {
+    width: 200px;
+}
+/* Tampilan responsif untuk ukuran layar antara 320px dan 425px */
+@media (min-width: 320px) and (max-width: 625px) {
+    /* Responsiveness for #customer-table and #barang-table */
+    .table-responsive {
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    .table-responsive table {
+        width: 100%;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        white-space: nowrap;
+        max-width: 200px;
+    }
+
+    /* Remove ellipsis (...) from last column */
+    .table-responsive td:last-child {
+        max-width: none;
+    }
+    #sidebar-hidden {
+        display: none;
+    }
+
+    article h2 {
+        font-size: 18px;
+    }
+
+    main article {
+        margin-left: 0;
+    }
+
+    /* Tampilan Responsif */
+    #mobile-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile-table_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    input[id="nama_barang"] {
+        width: 100px;
+    }
+
+    textarea[id="alamat_pelanggan"] {
+        width: 100%;
+        height: 120px;
+    }
+
+    .custom-form-control {
+        width: 100%;
+        height: 50px;
+    }
+
+    input[id="nama_pelanggan"] {
+        width: 100%;
+    }
+
+    input[id="harga_produk"] {
+        width: 70px;
+    }
+
+    input[id="diskon_barang"] {
+        width: 70px;
+    }
+
+    input[id="nama_kelurahan"],
+    input[id="nama_kota"],
+    input[id="nama_provinsi"] {
+        margin-left: 0;
+    }
+
+    .address-custom-form-control {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* Menambahkan gaya untuk tombol "Add Product" */
+    #product-add,
+    #product-delete {
+        padding: 5px 9px;
+        border: 0.5px solid var(--emerald-color);
+        border-radius: 5px;
+        color: var(--text-color1);
+        margin-top: 10px;
+        width: 100px;
+    }
+
+
+    #product-add {
+        background-color: var(--indigo-color);
+    }
+
+    #product-delete {
+        background-color: var(--emerald-color);
+    }
+
+    #product-add:hover,
+    #product-delete:hover {
+        color: var(--indigo-color);
+        background-color: var(--text-color1);
+        transition: 0.2s ease-in-out;
+    }
+}
